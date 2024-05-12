@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rating">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarForRating"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_margin="0dp"
+        android:src="@drawable/ic_home"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Termékek"
+        app:layout_constraintTop_toBottomOf="@id/toolbarForRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="navigateHome"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".Rating"
+        app:layout_constraintTop_toBottomOf="@id/homeButton">
+
+        <!-- "Értékel az applikációt" szöveg -->
+        <TextView
+            android:id="@+id/textViewRateApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Értékel az applikációt:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Első csillag -->
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            android:layout_below="@id/textViewRateApp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:tag="1"/>
+
+        <!-- Második csillag -->
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            android:layout_toEndOf="@id/star1"
+            android:layout_alignTop="@id/star1"
+            android:layout_marginStart="8dp"
+            android:tag="2"/>
+
+        <!-- Harmadik csillag -->
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            android:layout_toEndOf="@id/star2"
+            android:layout_alignTop="@id/star2"
+            android:layout_marginStart="8dp"
+            android:tag="3"/>
+
+        <!-- Negyedik csillag -->
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            android:layout_toEndOf="@id/star3"
+            android:layout_alignTop="@id/star3"
+            android:layout_marginStart="8dp"
+            android:tag="4"/>
+
+        <!-- Ötödik csillag -->
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            android:layout_toEndOf="@id/star4"
+            android:layout_alignTop="@id/star4"
+            android:layout_marginStart="8dp"
+            android:tag="5"/>
+
+        <!-- "Értékeléseid" szöveg -->
+        <TextView
+            android:id="@+id/textViewYourRatings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Értékeléseid:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/star1"
+            android:layout_marginTop="16dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewYourRatings">
+
+            <TextView
+                android:id="@+id/ratingsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

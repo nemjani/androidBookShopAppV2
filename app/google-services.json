@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "98056518428",
+    "project_id": "androidbookshopsecond",
+    "storage_bucket": "androidbookshopsecond.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98056518428:android:d5ff43c812ebe9831b58d9",
+        "android_client_info": {
+          "package_name": "com.example.androidbookshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98056518428-6aoj35th48qp9tlr0k4sffhhjkuic41q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidbookshop",
+            "certificate_hash": "12760b1e19a4fd92e1c40a28511b2cd2584be1bb"
+          }
+        },
+        {
+          "client_id": "98056518428-rdhcj2ci6chs09ks90r1jhtrfsqht63t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgKNJPGvwExXoEqTdir453HKJVNHS8N84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98056518428-rdhcj2ci6chs09ks90r1jhtrfsqht63t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="zold">#367839</color>
+    <color name="halvany_sotet_barna">#A0522D</color>
+    <color name="halvany_vilagos_barna">#DEB887</color>
+</resources>
