@@ -26,6 +26,8 @@
     <string name="add_to_cart">Kosárba</string>
     <string name="item_information_placeholder">Információ a termékről</string>
     <string name="delete_item">Törlés</string>
+    <string name="contentDescripption">képleírás</string>
+    <string name="welcome_text">Üdvözöllek a BookShop applikációban!</string>
 
     <string-array name="shopping_item_names">
         <item>A háromtest-probléma</item>
